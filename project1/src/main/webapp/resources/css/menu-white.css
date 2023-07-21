@@ -13,7 +13,7 @@ body{
 
 a{
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 nav{
@@ -22,6 +22,7 @@ nav{
 	box-sizing: border-box;
 	font-family: 'GangwonState';
 	background-color: black;
+	color: white;
 }
 
 .header {
@@ -32,38 +33,39 @@ nav{
 	position: fixed;
 }
 
-.chxx {
-	width: 25%;
+.head_left {
+	width: 20%;
 	float: left;
 	font-size: 18pt;
-	padding-left: 50px;
+	padding-left: 10px;
 	text-align: left;
 	line-height: 80px;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
-.list {
-	float: right;
+.head_center {
 	width: 65%;
 	height: 80px;
 	padding-right: 50px;
-	line-height: 60px;
 }
 
-.list ul{
-	maring: 0;
+.head_center ul{
+	margin: 0;
 	padding: 0;
-	float: right;
 	height: 80px;
+	text-align: center;
 }
 
-.list li {
+.head_center li {
+	margin: 0;
+	padding: 0;
 	list-style: none; /* li앞에 원을 없애줍니다. */
 	float: left;
 	text-align: center;
 	width: 100px;
 	height: 80px;
-	margin-top: -12px;
+	line-height: 80px;
 }
 
 a:hover {
@@ -71,7 +73,7 @@ a:hover {
 	cursor: pointer;
 }
 
-.list li:hover {
+.head_center li:hover {
 	color: #EC87C0;
 	cursor: pointer;
 }
@@ -79,4 +81,5 @@ a:hover {
 img {
 	vertical-align: middle;
 }
+
 

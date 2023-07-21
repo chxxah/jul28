@@ -6,30 +6,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="./css/menu-white.css">
 <link rel="stylesheet" href="./css/board.css">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
-<!-- menu -->
-	<nav>
-		<div class="header">
-			<div class="chxx">
-				<img alt="" src="./img/chxx.png"> <a href='./index'>CHXX
-					AH</a>
-			</div>
-			<div class="list">
-				<ul>
-					<li onclick="link('board')"><span style="color: #EC87C0;">BOARD</span></li>
-					<li onclick="link('ourstory')">OUR STORY</li>
-					<li onclick="link('notice')">NOTICE</li>
-					<li onclick="link('contact')">CONTACT</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-<!-- board -->
+<%@ include file="menu.jsp"%>
 	<div class = bg_board>
 		<div class="head">BOARD</div>
 	</div>

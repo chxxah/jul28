@@ -29,7 +29,9 @@
 <%@ include file="menu.jsp" %>
 	<div style="height: 70px; width: 100%"></div>
 	<hr style= "color: #E0E0E0;">
-	<div class=""></div>
+	<div class="info_box">
+		<div class="board_logo"><img alt="" src="./img/board_logo.png" style="align-content: center; align-items: center; width: 70%;"></div>
+	</div>
 	<div class="detail-content">
 		<div class="title">${dto.bno } / ${dto.btitle }
 			<img alt="" src="./img/edit.png" style="width: 7%;" onclick="edit()">

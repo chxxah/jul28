@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GangwonState';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/GangwonState.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+nav{
+	top: 0;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	font-family: 'GangwonState';
+	background-color: black;
+}
+
+.header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+}
+
+.head_left {
+	width: 20%;
+	float: left;
+	font-size: 18pt;
+	padding-left: 10px;
+	text-align: left;
+	line-height: 80px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.head_center {
+	width: 65%;
+	height: 80px;
+	padding-right: 50px;
+}
+
+.head_center ul{
+	margin: 0;
+	padding: 0;
+	height: 80px;
+	text-align: center;
+}
+
+.head_center li {
+	margin: 0;
+	padding: 0;
+	list-style: none; /* li앞에 원을 없애줍니다. */
+	float: left;
+	text-align: center;
+	width: 100px;
+	height: 80px;
+	line-height: 80px;
+}
+
+a:hover {
+	color: #EC87C0;
+	cursor: pointer;
+}
+
+.head_center li:hover {
+	color: #EC87C0;
+	cursor: pointer;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.head_right {
+	float: right;
+	width: 15%;
+	height: 80px;
+	line-height: 80px;
+	background-color: black;
+}
+
+
