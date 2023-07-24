@@ -1,7 +1,6 @@
 package com.peazh.pro1;
 
 import java.util.List;
-import java.util.Map;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -22,12 +21,12 @@ public class BoardService {
 	private Util util;
 
 	// 보드 리스트 불러오는 메서드
-	public List<Map<String, Object>> boardList() {
+	public List<BoardDTO> boardList() {
 		return boardDAO.boardList();
 	}
 
-	public BoardDTO detail(int bno) {
-		BoardDTO dto = boardDAO.detail(bno);
+	public BoardDTO detail(BoardDTO dto2) {
+		BoardDTO dto = boardDAO.detail(dto2);
 
 		// ip를 string bip에 넣기
 		String bip = dto.getBip();

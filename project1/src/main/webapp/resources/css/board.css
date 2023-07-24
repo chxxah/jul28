@@ -97,6 +97,10 @@ td {
 	cursor: pointer;
 }
 
+img:hover {
+	cursor: pointer;
+}
+
 .block1 {
 	clear:both;
 	width: 100%;

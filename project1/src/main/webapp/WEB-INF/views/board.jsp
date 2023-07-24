@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>CHXX AH' BOARD</title>
 <link rel="stylesheet" href="./css/menu-white.css">
 <link rel="stylesheet" href="./css/board.css">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -13,36 +14,46 @@
 
 </head>
 <body>
-<%@ include file="menu.jsp"%>
-	<div class = bg_board>
+	<%@ include file="menu.jsp"%>
+
+	<div class=bg_board>
 		<div class="head">BOARD</div>
 	</div>
 	<br>
 	<br>
 	<br>
-	<div class = btn>
-		<input type="text">
-		<img alt="" src="./img/search.png" style="width: 8%;" > &nbsp;
-		<img alt="" src="./img/write.png" style="width: 8%;" onclick="location.href='./write'">
+	<div class=btn>
+		<input type="text"> 
+			<img alt="" src="./img/search.png" style="width: 8%;"> &nbsp; 
+			<c:if test="${sessionScope.mname ne null}">
+				<img alt="" src="./img/write.png" style="width: 8%;" onclick="location.href='./write'">
+			</c:if>
 	</div>
-	<table>
-		<tr>
-			<th>번호</th>
-			<th>제목</th>
-			<th>작성자</th>
-			<th>작성일</th>
-			<th>좋아요</th>
-		</tr>
-		<c:forEach items="${list }" var="row">
-			<tr class="board_list" onclick="location.href='./detail?bno=${row.bno }'">
-				<td class="td1">${row.bno }</td>
-				<td class="title">${row.btitle }</td>
-				<td class="td1">${row.bwrite }</td>
-				<td class="td2">${row.bdate }</td>
-				<td class="td1">${row.blike }</td>
-			</tr>
-		</c:forEach>
-	</table>
+	<c:choose>
+		<c:when test="${fn:length(list) gt 0 }">
+			<table>
+				<tr>
+					<th>번호</th>
+					<th>제목</th>
+					<th>작성자</th>
+					<th>작성일</th>
+					<th>좋아요</th>
+				</tr>
+				<c:forEach items="${list }" var="row">
+					<tr class="board_list"
+						onclick="location.href='./detail?bno=${row.bno }'">
+						<td class="td1">${row.bno }</td>
+						<td class="title">${row.btitle }</td>
+						<td class="td1">${row.m_name }</td>
+						<td class="td2">${row.bdate }</td>
+						<td class="td1">${row.blike }</td>
+					</tr>
+				</c:forEach>
+			</table>
+		</c:when>
+		<c:otherwise><h1>출력할 데이터가 없습니다.</h1></c:otherwise>
+	</c:choose>
+
 	<div class="block1"></div>
 </body>
 </html>

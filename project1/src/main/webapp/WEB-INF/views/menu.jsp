@@ -4,7 +4,7 @@
 <nav>
 	<div class="header">
 		<div class="head_left">
-			<img alt="" src="./img/chxx.png"> <a href='./index'>CHXX AH</a>
+			<img alt="" src="./img/chxx.png"> &nbsp; <span class="ch"><a href='./index'>CHXX AH</a></span>
 		</div>
 		<div class="head_center">
 			<ul>
@@ -17,20 +17,18 @@
 		</div>
 
 		<div class="head_right">
-			<div class=user>${sessionScope.mid }｜</div>
-			<div class=box>LOGOUT</div>
-		</div>
-
-		<%-- <c:choose>
+		<c:choose>
 			<c:when test="${sessionScope.mname eq null}">
-				<li onclick="link('login')"><span class="list6">LOGIN</span></li>
+				<li class= "box_login" onclick="link('login')"><span class="list6">LOGIN</span></li>
 			</c:when>
 			<c:otherwise>
-				<li onclick="link('myInfo')"><span class="list5">${sessionScope.mname }(${sessionScope.mid })님
-						반갑습니다</span></li>
-				<li onclick="link('logout')"><span class="list7">LOGOUT</span></li>
+				<li class= "box_id" onclick="link('myInfo')"><span class="list5">${sessionScope.mid }｜
+						</span></li>
+				<li class= "box_logout" onclick="link('logout')"><span class="list7">LOGOUT</span></li>
 			</c:otherwise>
-		</c:choose> --%>
+		</c:choose>
+		</div>
+
 
 	</div>
 </nav>
