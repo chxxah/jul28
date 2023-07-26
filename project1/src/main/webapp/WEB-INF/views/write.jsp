@@ -24,7 +24,7 @@
 <%@ include file="menu.jsp" %>
 		<h1>글쓰기</h1>
 		<div class="write-div">
-			<form action="./write" method="post">
+			<form action="./write" method="post" onsubmit="return check()">
 				<input type="text" name="title">
 				<textarea id="summernote" name="content"></textarea>
 				<button class="btn100" type="submit">글쓰기</button>
@@ -37,8 +37,16 @@
 			   height: 400
 		   });
 		});
+	
+	function check(){
+		let title = document.getElementById("title");
+		title.value;
+		title.value.length;
+		if (title.value = null) {
+			
+		}
+		
+	}
 </script>
-
-
 </body>
 </html>

@@ -22,13 +22,13 @@
 				<li class= "box_login" onclick="link('login')"><span class="list6">LOGIN</span></li>
 			</c:when>
 			<c:otherwise>
-				<li class= "box_id" onclick="link('myInfo')"><span class="list5">${sessionScope.mid }｜
-						</span></li>
+				<li class= "box_id" onclick="link('myInfo')"><span class="list5">${sessionScope.mid }  
+						</span></li> 
+						&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
 				<li class= "box_logout" onclick="link('logout')"><span class="list7">LOGOUT</span></li>
 			</c:otherwise>
 		</c:choose>
 		</div>
-
 
 	</div>
 </nav>
@@ -37,13 +37,3 @@
 		location.href = "./" + url;
 	}
 </script>
-
-
-
-
-
-
-
-
-
-

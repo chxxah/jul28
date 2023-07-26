@@ -9,16 +9,16 @@
 body{
 	margin: 0;
 	padding: 0;
+	text-transform: uppercase;
 }
 
 a{
 	text-decoration: none;
-	color: black;
+	color: #EC87C0;
 }
 
 nav{
 	top: 0;
-	text-transform: uppercase;
 	box-sizing: border-box;
 	font-family: 'GangwonState';
 	background-color: black;
@@ -47,7 +47,7 @@ nav{
 
 .head_center {
 	float: left;
-	width: 65%;
+	width: 60%;
 	display: flex;
 	justify-content: center; 
 	align-items : center;
@@ -78,7 +78,9 @@ nav{
 }
 
 .head_right {
-	width: 15%;
+	padding: 0;
+	margin: 0;
+	width: 20%;
 	line-height: 80px;
 	float: right;
 	display: flex;
@@ -86,8 +88,8 @@ nav{
 	align-items: center;
 }
 
-.box_login, .box_id {
-	list-style: none;
+.head_right li {
+	list-style-type: none;
 }
 
 a:hover {
@@ -100,7 +102,7 @@ a:hover {
 	cursor: pointer;
 }
 
-.box_login:hover, .box_logout:hover {
+.box_id:hover, .box_login:hover, .box_logout:hover {
 	color: #EC87C0;
 	cursor: pointer;
 }

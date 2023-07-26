@@ -14,10 +14,6 @@ html, body {
 	height: 100%;
 }
 
-.pink_color {
-	color: #EC87C0;
-}
-
 .bg_board {
 	margin: 0;
 	padding: 0;
@@ -31,9 +27,7 @@ html, body {
 	font-family: 'GangwonState';
 	font-size: 30pt;
 	top: 150px;
-	left: 50px;
-	width: 100%;
-	color: white;
+	left: 80px;
 	position: absolute;
 	font-stretch: ultra-condensed;
 	color: white;
@@ -60,7 +54,7 @@ table {
 	font-family: 'SUIT-Regular';
 	margin: 0 auto;
 	width: 1000px;
-	height: 450px;
+	height: auto;
 	border-top: 2px solid #616161;
 	border-collapse: collapse; 
 }
@@ -70,10 +64,12 @@ th {
 	font-weight: 900;
 	border-top: thick;
 	background-color: #F5F5F5;
+	height: 40px;
 }
 
 td {
 	border-bottom: 1px solid #BDBDBD;
+	height: 38px;
 }
 
 .title {
@@ -99,6 +95,46 @@ td {
 
 img:hover {
 	cursor: pointer;
+}
+
+.list1 {
+	color: black;
+}
+
+.page {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+img {
+	width: 20px;
+	vertical-align: middle;
+}
+
+.page a, strong {
+	display: block;
+	margin: 0 2px;
+	float: left;
+	/* border: 1px solid #e6e6e6; */
+	width: 30px;
+	height: 30px;
+	line-height: 28px;
+	text-align: center;
+	font-size: 15px;
+	color: #757575;
+	margin-right: 10px;
+}
+
+.page a:hover {
+    color: #EC87C0;
+}
+
+strong {
+    font-weight: bolder;
+    color: #EC87C0;
+    cursor: pointer;
 }
 
 .block1 {
