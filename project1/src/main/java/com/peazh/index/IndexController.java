@@ -1,4 +1,4 @@
-package com.peazh.pro1;
+package com.peazh.index;
 
 import javax.servlet.http.HttpServletRequest;
 

@@ -20,7 +20,7 @@
 </head>
 <body>
 	<%@ include file="menu.jsp"%>
-
+	
 	<div class=bg_board>
 		<div class="head">BOARD</div>
 	</div>

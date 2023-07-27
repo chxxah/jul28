@@ -1,4 +1,4 @@
-package com.peazh.pro1;
+package com.peazh.board;
 
 import java.util.List;
 
@@ -7,6 +7,8 @@ import javax.inject.Named;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.peazh.util.Util;
 
 // 저 괄호 안에 없으면 boardservice라는 타입을 가지는데 저렇게 적어주면
 // 서비스의 이름을 지정해줌(이름 : boardSerivce) 저 이름으로 불릴거야~

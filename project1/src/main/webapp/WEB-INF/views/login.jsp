@@ -37,7 +37,7 @@ function check(){
 <body>
 	<%@ include file="menu.jsp"%>
 	<div style="height: 70px; width: 100%"></div>
-	<hr style="color: #E0E0E0;">
+	<hr class="hr">
 	<div class="login_form">
 		<h1>LOGIN</h1>
 		<form action="./login" method="post" onsubmit="return check()">
@@ -48,6 +48,12 @@ function check(){
 			<button class="login">LOGIN</button>
 			<span id="msg"></span>
 		</form>
+		<div class = "footer">
+			<a>아이디 찾기 | </a>
+			<a>비밀번호 찾기 | </a>
+			<a href="./join">회원가입</a>
+		</div>
+		
 	</div>
 </body>
 </html>

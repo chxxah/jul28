@@ -29,11 +29,10 @@
 <body>
 	<%@ include file="menu.jsp"%>
 	<div style="height: 70px; width: 100%"></div>
-	<hr style="color: #E0E0E0;">
+	<hr class="hr">
 	<div class="info_box">
 		<div class="board_logo">
-			<img alt="" src="./img/board_logo.png"
-				style="align-content: center; align-items: center; width: 70%;">
+			<img alt="" src="./img/board_logo.png">
 		</div>
 	</div>
 	<div class="detail-content">

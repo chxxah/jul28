@@ -25,9 +25,9 @@
 	<!-- insert는 result가 없습니다 -->
 	<insert id="write" parameterType="boardDTO">
 		INSERT INTO board (btitle,
-		bcontent, m_no, bip)
+		bcontent, m_no, bip, uuid)
 		VALUES (#{btitle }, #{bcontent }, (SELECT m_no
-		FROM members WHERE m_id=#{m_id}), #{bip });
+		FROM members WHERE m_id=#{m_id}), #{bip }, #{uuid });
 	</insert>
 
 	<delete id="delete" parameterType="boardDTO">

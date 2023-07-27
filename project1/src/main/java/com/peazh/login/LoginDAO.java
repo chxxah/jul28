@@ -1,4 +1,4 @@
-package com.peazh.pro1;
+package com.peazh.login;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;

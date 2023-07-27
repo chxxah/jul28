@@ -1,4 +1,4 @@
-package com.peazh.pro1;
+package com.peazh.login;
 
 public class LoginDTO {
 	private int m_no, m_grade, count;// count = 로그인시 1 or 0이 들어옴

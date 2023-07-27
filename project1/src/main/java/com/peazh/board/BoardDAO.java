@@ -1,4 +1,4 @@
-package com.peazh.pro1;
+package com.peazh.board;
 
 import java.util.List;
 
