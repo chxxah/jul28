@@ -10,7 +10,6 @@
 <title>CHXX AH' BOARD</title>
 <link rel="stylesheet" href="./css/menu-white.css">
 <link rel="stylesheet" href="./css/board.css">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 <script type="text/javascript">
 	function linkPage(pageNo){
@@ -57,7 +56,7 @@
 				</c:forEach>
 			</table>
 			<div class="page">
-			<ui:pagination paginationInfo="${paginationInfo}" type="image" jsFunction="linkPage" />
+			<ui:pagination paginationInfo="${paginationInfo }" type="image" jsFunction="linkPage" />
 			</div>
 
 		</c:when>

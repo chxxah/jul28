@@ -13,19 +13,20 @@
 						STORY</span></li>
 				<li onclick="link('notice')"><span class="list3">NOTICE</span></li>
 				<li onclick="link('contact')"><span class="list4">CONTACT</span></li>
+				<li onclick="link('members')"><span class="list5">LIST</span></li>
 			</ul>
 		</div>
 
 		<div class="head_right">
 		<c:choose>
 			<c:when test="${sessionScope.mname eq null}">
-				<li class= "box_login" onclick="link('login')"><span class="list6">LOGIN</span></li>
+				<li class= "box_login" onclick="link('login')"><span class="list7">LOGIN</span></li>
 			</c:when>
 			<c:otherwise>
-				<li class= "box_id" onclick="link('myInfo')"><span class="list5">${sessionScope.mid }  
+				<li class= "box_id" onclick="link('myInfo')"><span class="list6">${sessionScope.mid }  
 						</span></li> 
 						&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-				<li class= "box_logout" onclick="link('logout')"><span class="list7">LOGOUT</span></li>
+				<li class= "box_logout" onclick="link('logout')"><span class="list8">LOGOUT</span></li>
 			</c:otherwise>
 		</c:choose>
 		</div>

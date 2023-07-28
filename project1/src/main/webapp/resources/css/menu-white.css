@@ -14,7 +14,6 @@
 body{
 	margin: 0;
 	padding: 0;
-	text-transform: uppercase;
 }
 
 a{
@@ -27,6 +26,7 @@ nav{
 	box-sizing: border-box;
 	font-family: 'GangwonState';
 	color: white;
+	text-transform: uppercase;
 }
 
 .header {

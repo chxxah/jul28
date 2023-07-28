@@ -13,6 +13,7 @@ img {
 	align-items: center;
 }
 </style>
+<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 		<div style="text-align:center;"><img alt="" src="./img/warning.gif">

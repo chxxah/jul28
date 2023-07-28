@@ -9,7 +9,6 @@
 
 <link rel="stylesheet" href="./css/menu.css">
 <link rel="stylesheet" href="./css/write.css">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 
 <!-- include libraries(jQuery, bootstrap) -->

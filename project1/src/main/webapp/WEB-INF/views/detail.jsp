@@ -8,7 +8,6 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="./css/menu-black.css">
 <link rel="stylesheet" href="./css/detail.css">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 <script type="text/javascript">
 	function edit() {
@@ -34,21 +33,24 @@
 		<div class="board_logo">
 			<img alt="" src="./img/board_logo.png">
 		</div>
+		<div class="namebar">
+			<div class="name">${dto.m_name } (${dto.m_id })</div>
+			<div class="etc">
+				<div class="date">작성일 : ${dto.bdate }</div>
+				<div class="ip">IP : ${dto.bip }</div>
+				<div class="like"><img alt="" src="./img/view.png">조회수 : ${dto.blike }</div>
+			</div>
+		</div>
 	</div>
+	<hr class="hr">
 	<div class="detail-content">
-		<div class="title">${dto.bno }
-			/ ${dto.btitle }
+		<div class="title">${dto.bno }&nbsp;&nbsp; ${dto.btitle }
 			<c:if test="${sessionScope.mid ne null && m_id eq dto.m_id}">
 				<img alt="" src="./img/edit.png" style="width: 7%;" onclick="edit()">
 				<img alt="" src="./img/del.png" style="width: 7%;" onclick="del()">
 			</c:if>
 		</div>
-		<div class="namebar">
-			<div class="name">${dto.m_name }님</div>
-			<div class="like">${dto.blike }</div>
-			<div class="date">${dto.bdate }</div>
-			<div class="ip">${dto.bip }</div>
-		</div>
+		<div class=""></div>
 		<div class="content">${dto.bcontent }</div>
 	</div>
 
